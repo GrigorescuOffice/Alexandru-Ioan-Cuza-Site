@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ <head>
+   <link rel="stylesheet" href="style.css">
+   <title> Cuza Ploiesti </title>
+   <script src="script.js"></script>
+ </head>
+<body background='mnt.jpg'>
+
+  <section id="main">
+
+  <marquee><img src="http://www.liccuza.ro/img/header_colegiul_cuza_ploiesti.jpg" ></marquee><p>
+
+  <table>
+      <tr>
+  <input type="button" id="HomeButton" value="Home" onclick="showHome()"></input>
+</tr><Tr>
+  <input type="submit" id="squadButton" value="8A Squad" onclick="showSquad()"></input>
+  </tr><Tr>
+  <input type="submit" id="TsquadButton" value="8A Teachers Squad" onclick="showTSqaud()"></input>
+</tr><tr>
+  <input type="button" id="Quiz" value="Quiz" onclick="showQuiz()"></input>
+</tr><tr>
+  <input type="submit" id="Memories" value="Memories" onclick="showMemories()"></input>
+</tr>
+</table>
+
+  <div id="Home" style="display:block">
+    <h1 id="h1-index">About our college</h1>
+      <p id="p-index">
+The National College "Al I. Cuza" Ploiesti (formerly Medie 5 school) is one of the most renowned institutions in the city of Ploiesti and in Prahova county. Situated in the central area of the city, on Trei Ierarhi Street at No. 10, the high school has a rich history, linked to both the place where it was built and the building. It is said that in 1859, on his way to Bucharest, Al. I. Cuza has left here. That is why, later, the name of the school was linked to that of the ruler.      </p>
+  <br>  <h1 id="h1-index">Who was Cuza? </h1>
+      <p id="p-index">
+Alexandru Ioan Cuza , or Alexandru Ioan I, also anglicised as Alexander John Cuza; (20 March 1820 – 15 May 1873) was Prince of Moldavia, Prince of Wallachia, and later Domnitor of the Romanian Principalities. He was a prominent figure of the Revolution of 1848 in Moldavia. He initiated a series of reforms that contributed to the modernization of Romanian society and of state structures.
+</p><br>
+    <h1 id="h1-index">Geografic position</h1>
+      <p id="p-index">
+        Address: Strada Trei Ierarhi 10, Ploiești 100010<br>
+        Phone: 0344 802 070<br>
+        44.9408° N, 26.0167° E
+      <p><br><br>
+  </div>
+
+  <div id="squad" style="display:none">
+	SQUAD </div>
+  <div id="tSquad" style="display:none">
+    TEACHERS
+  </div>
+
+  <div id="quiz" style="display:none" >
+    <h1><center>LET'S SEE IF YOU KNOW 8A</H1></center><table><th>
+		<p>1. The teacher than can summon 2 de 2 is </th><th><b id="Ene" value="Mr. Ene !" style="display:none">Mr. Ene !</b> </th></table>
+          <table id="questions">
+            <th> <input type="button" value="Mr.Ene" onclick="Q1()" id="ans1" />
+            <th> <input type="button" value="Mrs. Scheau"  onclick="showAlert()" id="ans2" />
+            <th> <input type="button" value="Mr. Cernea"  onclick="showAlert()" id="ans3" /> </tH></TABLE></p>
+
+
+		<b id="q2" style="display:none"><table style="display.none"> <th>2Today </th><th><b id="everyboody"  style="display:none">Everybody</b></th><th>has bonuses</th></table>
+          <table id="questions">
+            <th> <input type="button" value="Antonescu" onclick="showAlert()" id="ans1" />
+            <th> <input type="button" value="Stefania"  onclick="showAlert()" id="ans2" />
+            <th> <input type="button" value="Everybody"  onclick="Q2()" id="ans3-2" /> </Th></TABLE></b>
+
+		<b id="q3" style="display:none"><table style="display.none"> <th>3. 8A is the </th><th><b id="best"  style="display:none">best</b></th><th>class ever</th></table>
+          <table id="questions">
+            <th> <input type="button" value="Best" onclick="Q3()" id="ans1-3" />
+            <th> <input type="button" value="Comunist"  onclick="showAlert()" id="ans2" />
+            <th> <input type="button" value="Worst"  onclick="showAlert()" id="ans3" /> </Th></TABLE></b>
+</div>
+<div id="memories" style="display:none">
+
+    <table border="5px" id="table">
+      <br><br><br>
+        <tr id="tr">
+          <th> <img id="imagine" src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+          <th><img id="imagine"  src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+          <th><img id="imagine"  src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+        </tr>
+        <tr id="tr">
+          <th><img id="imagine"  src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+          <th><img id="imagine"  src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+          <th><img id="imagine"  src="https://i.vimeocdn.com/portrait/1274237_300x300.webp" </th>
+          <th> Descriere imagine </th>
+        </tr>
+
+
+</div>
+</section>
+</body>

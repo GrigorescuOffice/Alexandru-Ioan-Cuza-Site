@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+<!--
+function showMe (it, box) {
+  var vis = (box.checked) ? "block" : "none";
+  document.getElementById(it).style.display = vis;
+}
+</script>
+</head>
+<body bgcolor="#718093">
+ <div id="main-login">
+   <center> <h1>Register Form </h1>
+ <img src="https://cdn.vectorstock.com/i/thumb-large/38/61/avatar-man-in-modern-flat-design-vector-15133861.jpg" id="avatar"></center>
+ <form action="login.html" method="post">
+ <br><h2><label>Username :</label><br>
+   <input type="text" id="user" placeholder="Chosse a Username"</input>
+ <h2><label>Password :</label><br>
+   <input type="password" id="pass" placeholder="Chosse a password" ></input>
+ <h2><label>Confirm Password :</label><br>
+   <input type="password" id="pass" placeholder="Confirm the password" ></input><br>
+   <input type="checkbox" name="c1" onclick="showMe('div1', this)"><a href="Terms.html">Terms</a>&<a href="Condotions.html">Condotions</a>
+
+   <div id="div1" style="display:none">
+
+   <input type="submit" id="sgn" value="Sign Up" onclick="alert('Account created!')"></input>
+
+   </div>
+
+
+
+   </form>
+</form>
+
+<bR><input type="submit" id="bck" value="Back" ></input>
+
+
+
+
+</body>
